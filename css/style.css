@@ -93,7 +93,7 @@ h1.logo {
 .hero-banner {
     background:
     linear-gradient(#0084ff57, #0084ff57),
-    url(/images/02-hero-bg.jpg) center no-repeat;
+    url(https://kingporchy.github.io/module-2-challenge/images/02-hero-bg.jpg) center no-repeat;
     background-size: cover;
     width: 100%;
     height: 100px;
