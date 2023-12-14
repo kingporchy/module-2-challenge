@@ -37,4 +37,8 @@ The "Work" section of the portfolio contains titled images of various front-end 
 
 For inquiries, you can reach out to Dario Vieira through the contact section. Contact details include a phone number, email, and a link to Dario's GitHub profile.
 
+## Getting Started
+
+Please follow the link: https://kingporchy.github.io/module-2-challenge/
+
 
