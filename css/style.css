@@ -1,0 +1,456 @@
+:root {
+    --primary-color: #fffdfd;
+    --secondary-color: #ffffff;
+    --accent-color: #f5f5f5;
+    --back-color: #008686;
+    --h3-color: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #f56666, #a9a9a9);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+
+/* Main Logo / Nav */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 15px 20px 0;
+    text-align: center;
+    text-decoration-color: #f5f5f5;
+    background-color: #f56666;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f5f5f5;
+}
+
+.navigation a {
+    text-align: right;
+    color: white;
+    
+  }
+
+  .navigation a:focus,
+  .contact-list li a:focus {
+      color: var(--secondary-color);
+  }
+
+  .navigation a::after,
+.contact-list li a::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--secondary-color);
+    transition: width 0.3s;
+}
+
+.navigation a:hover::after,
+.contact-list li a:hover::after {
+    width: 100%;
+}
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    border-radius: 50%;
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .logo-container h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: solid;
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .profile-photo {
+  
+      width: 80px;  
+      height: 80px; 
+      margin-left: 0; 
+      margin-top: -2%; 
+    }
+  }
+
+h1.logo {
+    font-size: 44px;
+    font-weight: 700;
+    text-align: left;
+    padding: 10px 10px 10px 40px;
+    color: var(--primary-color);
+    background-color: var(--back-color);
+}
+
+.hero-banner {
+    background:
+    linear-gradient(#0084ff57, #0084ff57),
+    url(https://kingporchy.github.io/module-2-challenge/images/02-hero-bg.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+
+  }
+
+  .hero-banner div  {
+    position: absolute;
+    right: 10%;
+    bottom: 60%;
+
+  }
+
+  .hero-banner h2 {
+
+    font-size: 34px;
+    font-weight: 700;
+    padding: 0%;
+    color: var(--primary-color);
+    background-color: var(--back-color);
+
+
+  }
+
+
+.navigation a,
+.contact-list li a {
+    position: relative;
+    font-size: 22px;
+    margin: 0 20px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: color 0.3s;
+}
+
+.navigation a:focus,
+.contact-list li a:focus {
+    color: var(--secondary-color);
+}
+
+.navigation a::after,
+.contact-list li a::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(blue);
+    transition: width 0.3s;
+}
+
+.navigation a:hover::after,
+.contact-list li a:hover::after {
+    width: 100%;
+}
+
+
+.hero div {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+
+.hero h2 {
+    font-size: 34px;
+    font-weight: 700;
+    padding: 10px;
+    color: var(--primary-color);
+    background-color: var(--back-color);
+}
+
+/* Main / Section */
+.section {
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    position: relative;
+    margin-right: 25px;
+}
+
+.section h3 {
+    font-size: 50px;
+    text-align: right;
+    padding-right: 15px;
+    width: 200px;
+    color: var(--h3-color);
+}
+
+.section h3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 4px;
+    background-color: white;
+}
+
+/* About */
+
+.section-content {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;     
+    height: 30vh;   
+    margin-left: 10px;   
+} 
+
+.section-content .profile-photo {
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    margin-right: 10px; 
+}
+
+
+.section-content p {
+    color: #ffffff;  
+    margin-bottom: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Portfolio Container */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.project-list .project:nth-child(1) {
+    flex: 1 1 100%;
+}
+
+.project-list .project:nth-child(1) .project-wrap {
+    height: 400px;
+}
+
+.project {
+    flex: 1 1 50%;
+}
+
+.project-wrap {
+    position: relative;
+    padding: 20px;
+    margin: 10px;
+    height: 200px;
+    border: 2px solid var(--back-color);
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.project-wrap:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(251, 251, 251, 0.5);
+}
+
+.project:nth-child(1) .project-wrap {
+    background-image: url(../images/02-portfolio-1.jpg);
+}
+
+.project:nth-child(2) .project-wrap {
+    background-image: url(../images/02-portfolio-3.jpg);
+}
+
+.project:nth-child(3) .project-wrap {
+    background-image: url(../images/02-portfolio-2.jpg);
+}
+
+.project:nth-child(4) .project-wrap {
+    background-image: url(../images/02-portfolio-4.jpg);
+}
+
+.project:nth-child(5) .project-wrap {
+    background-image: url(../images/02-run-buddy.jpg);
+}
+
+.project-content {
+    display: inline-block;
+    padding: 10px 10px 10px 15px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    color: var(--primary-color);
+    background-color: var(--back-color);
+}
+
+.project-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project-descr {
+    font-size: 10px;
+}
+
+/* Contact */
+footer {
+    padding-bottom: 25px;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: sticky;
+}
+
+footer li {
+    color: white;
+}
+
+.contact-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-list li {
+    margin: 0 10px;
+}
+
+.contact-list li a,
+.contact-list li a:visited {
+    color: var(--primary-color);
+}
+
+.contact-list li a::after {
+    background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 1024px) {
+
+    header,
+    .contact-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1.logo {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .navigation {
+        justify-content: space-between;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .navigation a {
+        margin: 10px 0;
+    }
+
+    .contact-list li {
+        margin: 10px 0;
+        color: #f5f5f5;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+    }
+
+    .hero div {
+        width: 100%;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
+    .section-title {
+        margin-right: 0;
+        margin-bottom: 25px;
+        padding-right: 0;
+        padding-bottom: 15px;
+        max-width: 100%;
+    }
+
+    .section h3 {
+        text-align: left;
+        width: 100%;
+    }
+
+    .section h3::after {
+        bottom: 0;
+        left: 0;
+        top: auto;
+        right: auto;
+        width: 100%;
+        height: 4px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .project-list .project:nth-child(1) .project-wrap {
+        height: 200px;
+    }
+
+    .project {
+        flex: 1 1 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1.logo {
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .section h3 {
+        font-size: 34px;
+    }
+}
